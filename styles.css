@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+  background-image: linear-gradient(to right, #DEDEDE, #232045);
+  color: #FFF;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 10px;
+}
+
+
+.form input {
+  box-sizing: border-box; /*isso faz com que os inputs não ultrapassem o tamanho da div*/
+  border: 1px solid #241E70;
+  background: #FFF;
+  color: #241E70;
+  padding: 15px;
+  font-size: 18px;
+  width: 100%;
+}
+
+.form input::placeholder {
+  color: #241E70;
+}
+
+/*retira a borda que é colocada automaticamente no input, quando clico dentro, para escrever*/
+.form input:focus {
+  outline: none;
+}
+
+.cad {
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  background-color: #FFF;
+  color: #241E70;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  transition: .5s;
+  font-weight: bold;
+}
+
+.cad th {
+  width: 200px;
+}
+
+.btn {
+  margin: auto;
+  background-color: #241E70;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  height: 3em;
+  width: 12em;
+  border-radius: 1.5em;
+}
